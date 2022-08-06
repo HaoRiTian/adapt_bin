@@ -13,7 +13,7 @@ function get_pid() {
 
 PID=$(get_pid ${proc})
 if [ -z $PID ]; then
-    echo "${proc} doesn't running."
+    echo "`date +"%F %T"`, ${proc} doesn't running."
     exit 1
 fi
 
